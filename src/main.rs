@@ -3,9 +3,10 @@ mod utils;
 mod day01;
 mod day02;
 mod day03;
+mod day04;
 
 fn main() {
-    let day = 3;
+    let day = 4;
     let part = 'B';
 
     let _filename = format!("src/inputs/day{:02}.txt", day);
@@ -18,6 +19,8 @@ fn main() {
         (2, 'B') => day02::run_part_b(&_filename),
         (3, 'A') => day03::run_part_a(&_filename),
         (3, 'B') => day03::run_part_b(&_filename),
+        (4, 'A') => day04::run_part_a(&_filename),
+        (4, 'B') => day04::run_part_b(&_filename),
         _ => println!("Day or part not implemented!"),
     }
 }
