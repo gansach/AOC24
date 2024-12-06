@@ -5,10 +5,11 @@ mod day02;
 mod day03;
 mod day04;
 mod day05;
+mod day06;
 
 fn main() {
-    let day = 5;
-    let part = 'A';
+    let day = 6;
+    let part = 'B';
 
     let _filename = format!("src/inputs/day{:02}.txt", day);
     let _filename_with_part = format!("src/inputs/day{:02}_{}.txt", day, part);
@@ -24,6 +25,8 @@ fn main() {
         (4, 'B') => day04::run_part_b(&_filename),
         (5, 'A') => day05::run_part_a(&_filename),
         (5, 'B') => day05::run_part_b(&_filename),
+        (6, 'A') => day06::run_part_a(&_filename),
+        (6, 'B') => day06::run_part_b(&_filename),
         _ => println!("Day or part not implemented!"),
     }
 }
